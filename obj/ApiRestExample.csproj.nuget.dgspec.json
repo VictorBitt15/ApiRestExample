@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\07579744490\\Documents\\ApiRestExample\\ApiRestExample.csproj": {}
+    "C:\\Users\\07579744490\\Documents\\ApiRestExample\\ApiRestExample.csproj": {}
   },
   "projects": {
-    "c:\\Users\\07579744490\\Documents\\ApiRestExample\\ApiRestExample.csproj": {
+    "C:\\Users\\07579744490\\Documents\\ApiRestExample\\ApiRestExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\07579744490\\Documents\\ApiRestExample\\ApiRestExample.csproj",
+        "projectUniqueName": "C:\\Users\\07579744490\\Documents\\ApiRestExample\\ApiRestExample.csproj",
         "projectName": "ApiRestExample",
-        "projectPath": "c:\\Users\\07579744490\\Documents\\ApiRestExample\\ApiRestExample.csproj",
+        "projectPath": "C:\\Users\\07579744490\\Documents\\ApiRestExample\\ApiRestExample.csproj",
         "packagesPath": "C:\\Users\\07579744490\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\07579744490\\Documents\\ApiRestExample\\obj\\",
+        "outputPath": "C:\\Users\\07579744490\\Documents\\ApiRestExample\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\07579744490\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,6 +21,7 @@
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

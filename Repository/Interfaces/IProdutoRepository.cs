@@ -9,5 +9,6 @@ namespace ApiRestExample.Repository.Interfaces
     public interface IProdutoRepository
     {
         Task<IEnumerable<Produto>> ListAsync();
+        Task AddAsync(Produto produto);
     }
 }

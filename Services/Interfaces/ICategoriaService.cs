@@ -10,6 +10,9 @@ namespace ApiRestExample.Services.Interfaces
     public interface ICategoriaService
     {
         Task<IEnumerable<Categoria>> ListAsync();
-        Task<SaveCategoriaResponse> SaveAsync(Categoria categoria);
+        Task<CategoriaResponse> SaveAsync(Categoria categoria);
+        
+        Task<CategoriaResponse> UpdateAsync(int id, Categoria categoria);
+        Task<CategoriaResponse> DeleteAsync(int id);
     }
 }

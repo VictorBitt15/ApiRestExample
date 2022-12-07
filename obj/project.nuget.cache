@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V96tKP2mzksJC4WhHQ0GMLyqDYXG2RnQEkO1ljo6KP6zYbY4E8xCHwRCmldQUscYcJbTVdW8O66yedOlZzq1hQ==",
+  "dgSpecHash": "QYp7xR7/8RN809bRq+7Hq0Gq419xNzKGGOzWVpW4qYtf9gZ/4XpnFtkolz6x7d/rpIJCxTmn/QS7ZBUD8q5jeA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\07579744490\\Documents\\ApiRestExample\\ApiRestExample.csproj",
+  "projectFilePath": "C:\\Users\\07579744490\\Documents\\ApiRestExample\\ApiRestExample.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\07579744490\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\07579744490\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

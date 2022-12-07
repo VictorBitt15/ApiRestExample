@@ -50,5 +50,36 @@ namespace ApiRestExample.Controllers
             var categoriaRecurso = _mapper.Map<Categoria,CategoriaResource>(resultado.Categoria);
             return Ok(categoriaRecurso);
         }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateAsync(int id,[FromBody] SaveCategoriaResource recurso)
+        {
+            if(!ModelState.IsValid)
+            {
+                return BadRequest(ModelState.GetErrorMessages());
+            }
+            var categoria = _mapper.Map<SaveCategoriaResource,Categoria>(recurso);
+            var resultado = await _categoriaService.UpdateAsync(id,categoria);
+
+            if(!resultado.Sucess)
+            {
+                return BadRequest(resultado.Message);
+            }
+            var categoriaRecurso = _mapper.Map<Categoria,CategoriaResource>(resultado.Categoria);
+            return Ok(categoriaRecurso);
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> DeleteAsync(int id)
+        {
+            var resultado = await _categoriaService.DeleteAsync(id);
+            if(!resultado.Sucess)
+            {
+                return BadRequest(resultado.Message);
+            }
+            var categoriaRecurso = _mapper.Map<Categoria,CategoriaResource>(resultado.Categoria);
+            return Ok(categoriaRecurso);
+
+        }
     }
 }

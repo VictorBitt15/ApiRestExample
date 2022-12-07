@@ -32,7 +32,7 @@ namespace ApiRestExample.Persistence
             builder.Entity<Produto>().Property(prop=>prop.Id).IsRequired().ValueGeneratedOnAdd();
             builder.Entity<Produto>().Property(prop=>prop.Nome).IsRequired().HasMaxLength(20);
             builder.Entity<Produto>().Property(prop=>prop.Quantidade).IsRequired();
-            builder.Entity<Produto>().Property(prop=>prop.unidMedida).IsRequired();
+            builder.Entity<Produto>().Property(prop=>prop.UnidMedida).IsRequired();
         }
     }
 }

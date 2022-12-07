@@ -35,12 +35,20 @@ namespace ApiRestExample.Controllers
         [HttpPost]
         public async Task<IActionResult> PostAsync([FromBody] SaveProdutoResource recurso)
         {
-            if(!ModelState.IsValid)
-            {
-                return BadRequest(ModelState.GetErrorMessages());
-            }
+             if(!ModelState.IsValid)
+             {
+                 return BadRequest(ModelState.GetErrorMessages());
+             }
             var produto = _mapper.Map<SaveProdutoResource,Produto>(recurso);
-            
-        }
+            var resultado = await _produtoService.SaveAsync(produto);
+
+            if(!resultado.Sucess)
+            {
+                return BadRequest(resultado.Message);
+            }
+
+            var produtoRecurso = _mapper.Map<Produto,ProdutoResource>(resultado.Produto);
+            return Ok(produtoRecurso);
+         }
     }
 }
